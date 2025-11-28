@@ -54,10 +54,6 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 6) grounded = true;
-
-        if (collision.gameObject.layer == 7)
-            Debug.Log("You win");
-            Application.Quit();
             
     }
 
